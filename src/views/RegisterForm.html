@@ -1,0 +1,65 @@
+<section class="p-3 h-full box-border flex justify-center items-center">
+  <!-- 
+  --bg-100: #fffefb;
+  --bg-200: #f5f4f1;
+  --bg-300: #cccbc8;    
+    -->
+  <div class="bg-[#f5f4f1] w-full max-w-[500px]">
+    <form
+      class="w-full p-3 rounded-md flex flex-col items-center justify-center gap-3 box-border"
+      id="login_form"
+    >
+      <h1 class="font-bold text-xl p-2.5">Crear una cuenta</h1>
+
+      <input
+        id="fullname"
+        name="firstname"
+        type="text"
+        placeholder="Nombre(s)"
+        class="p-2.5 rounded-sm w-full outline-none bg-[#fffefb] font-medium"
+      />
+
+      <input
+        id="email"
+        name="email"
+        type="text"
+        placeholder="Correo electronico"
+        class="p-2.5 rounded-sm w-full outline-none bg-[#fffefb] font-medium"
+      />
+      <div class="relative flex items-center justify-center w-full">
+        <input
+          id="password"
+          name="password"
+          type="password"
+          placeholder="Contraseña"
+          class="p-2.5 rounded-sm w-full outline-none bg-[#fffefb] font-medium"
+        />
+        <button
+          id="register_submit"
+          type="button"
+          class="absolute right-0 p-2.5 flex items-center justify-center"
+        >
+          <box-icon name="low-vision" color="#00678d"></box-icon>
+        </button>
+      </div>
+      <button
+        type="submit"
+        class="bg-[#00678d] hover:bg-[#005a7b] w-full p-2.5 rounded text-[#eee] cursor-pointer"
+      >
+        Iniciar sesion
+      </button>
+      <div class="w-full p-2.5 my-3 flex items-center justify-center relative">
+        <hr class="border-t-[#00678d42] inline-block w-full" />
+        <span class="absolute p-2.5 bg-[#f5f4f1]">o</span>
+      </div>
+    </form>
+    <div class="p-2.5 mb-2.5 flex items-center justify-center">
+      <span class="text-sm"
+        >¿Ya tienes una cuenta?
+        <a href="/login" class="text-[#00678d] font-bold hover:underline"
+          >Iniciar sesion</a
+        ></span
+      >
+    </div>
+  </div>
+</section>

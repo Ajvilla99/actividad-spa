@@ -1,0 +1,55 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "email": "admin@admin.com",
+      "password": "admin123",
+      "role": "admin",
+      "full_name": "admin Torres"
+    },
+    {
+      "id": 2,
+      "username": "leo",
+      "email": "leo@admin.com",
+      "password": "admin123",
+      "role": "admin",
+      "full_name": "Leonardo Díaz"
+    },
+    {
+      "id": 3,
+      "username": "ana",
+      "email": "ana@admin.com",
+      "password": "admin123",
+      "role": "admin",
+      "full_name": "Ana Rivas"
+    },
+    {
+      "id": 4,
+      "username": "william",
+      "email": "william@coder.com",
+      "password": "coder123",
+      "role": "coder",
+      "full_name": "Elisa Ramírez",
+      "status": false
+    },
+    {
+      "id": 5,
+      "username": "tom",
+      "email": "tom@coder.com",
+      "password": "coder123",
+      "role": "coder",
+      "full_name": "Tomás Pérez",
+      "status": true
+    },
+    {
+      "id": 6,
+      "username": "gus",
+      "email": "gus@coder.com",
+      "password": "coder123",
+      "role": "coder",
+      "full_name": "Gustavo León",
+      "status": true
+    }
+  ]
+}
