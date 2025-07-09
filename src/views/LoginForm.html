@@ -25,8 +25,8 @@
           placeholder="Contraseña"
           class="p-2.5 rounded-sm w-full outline-none bg-[#fffefb] font-medium"
         />
-        <button type="button" class="absolute right-0 p-2.5 flex items-center justify-center">
-          <box-icon name="low-vision" color="#00678d"></box-icon>
+        <button id="show_pass" type="button" class="absolute right-0 p-2.5 flex items-center justify-center cursor-pointer z-10">
+          <box-icon name="low-vision" color="#00678d" class="transition-all duration-200"></box-icon>
         </button>
       </div>
       <button
@@ -40,7 +40,7 @@
         <span class="absolute p-2.5 bg-[#f5f4f1]">o</span>
       </div>
       <div class="w-full flex items-center justify-center">
-        <a href="/forgotPassword" class="text-sm hover:underline"
+        <a href="#/forgotPassword" class="text-sm hover:underline"
           >¿Olvidaste la contraseña?</a
         >
       </div>
@@ -48,7 +48,7 @@
     <div class="p-2.5 mb-2.5 flex items-center justify-center">
       <span class="text-sm"
         >¿No tienes una cuenta?
-        <a id="toRegister" href="/register" class="text-[#00678d] font-bold hover:underline"
+        <a id="toRegister" href="#/register" class="text-[#00678d] font-bold hover:underline"
           >Registrate</a
         ></span
       >
