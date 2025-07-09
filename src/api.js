@@ -1,7 +1,6 @@
 import { auth } from "./auth";
 const api_url = "http://localhost:3000";
 
-
 export const fetchData = async (url, method = "GET", data = null) => {
   const options = {
     method,
@@ -41,7 +40,11 @@ export const onLogin = async (username, password) => {
   return false; // ❌ login fallido
 };
 
-
 export const createAccount = async () => {
+}
 
+export const getClans = async () => {
+  const url =  `${api_url}/clans`
+  const clans = await fetchData(url);
+  return clans;
 }

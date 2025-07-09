@@ -52,7 +52,72 @@
       "status": true
     }
   ],
-  "courses" : [
-    
+  "clans": [
+    {
+      "id": 1,
+      "name": "Macondo",
+      "subtitle": "Creatividad e innovación",
+      "description": "Coders visionarios que crean soluciones donde otros ven imposibles. Como en Macondo, donde la imaginación y la transformación son constantes, estos coders rompen barreras y construyen el futuro con código.",
+      "coders": [],
+      "image_url": "/images/macondo.jpg",
+      "color": "slate",
+      "instructor": "TL David Martinez",
+      "schedule": "8:00 AM - 12:45 PM"
+    },
+    {
+      "id": 2,
+      "name": "Tayrona",
+      "subtitle": "Estructura y Estrategia",
+      "description": "Coders con mentalidad arquitectónica y visión a largo plazo. Como los Tayrona, que diseñaron caminos y ciudades avanzadas, estos programadores construyen código sólido, modular y adaptable a cualquier reto.",
+      "coders": [],
+      "image_url": "/images/tayrona.jpg",
+      "color": "indigo",
+      "instructor": "TL Moises Cantillo",
+      "schedule": "8:00 AM - 12:45 PM"
+    },
+    {
+      "id": 3,
+      "name": "Manglar",
+      "subtitle": "Trabajo en equipo e interconectividad",
+      "description": "Coders que prosperan en comunidad y saben que la mejor tecnología es colaborativa. Como un manglar que conecta ecosistemas, estos desarrolladores dominan APIs, bases de datos y redes, creando soluciones interdependientes y escalables.",
+      "coders": [],
+      "image_url": "/images/manglar.jpg",
+      "color": "emerald",
+      "instructor": "TL Javier Ariza",
+      "schedule": "8:00 AM - 12:45 PM"
+    },
+    {
+      "id": 4,
+      "name": "Ciénaga",
+      "subtitle": "Gestión de datos y optimización",
+      "description": "Coders que organizan, almacenan y procesan información con eficiencia. Como una ciénaga que retiene y filtra agua, estos programadores dominan estructuras de datos, optimización de consultas y gestión de grandes volúmenes de información.",
+      "coders": [],
+      "image_url": "/images/cienaga.jpg",
+      "color": "blue",
+      "instructor": "TL Javier Combita",
+      "schedule": "1:00 PM - 8:00 PM"
+    },
+    {
+      "id": 5,
+      "name": "Sierra",
+      "subtitle": "Resiliencia y alto rendimiento",
+      "description": "Coders que enfrentan cualquier desafío con determinación y precisión. Como la Sierra Nevada, que se mantiene firme ante el tiempo, estos programadores optimizan código, solucionan bugs y crean software robusto y de alto rendimiento.",
+      "coders": [],
+      "image_url": "/images/sierra.jpg",
+      "color": "amber",
+      "instructor": "TL Naydeth De La Hoz",
+      "schedule": "1:00 PM - 8:00 PM"
+    },
+    {
+      "id": 6,
+      "name": "Caimán",
+      "subtitle": "Fuerza y precisión",
+      "description": "Coders estratégicos que abordan cada desafío con enfoque y determinación, como el caimán que observa, analiza y ataca en el momento exacto.",
+      "coders": [],
+      "image_url": "/images/caiman.jpg",
+      "color": "red",
+      "instructor": "TL Javier Combita",
+      "schedule": "1:00 PM - 8:00 PM"
+    }
   ]
 }
