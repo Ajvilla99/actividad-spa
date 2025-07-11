@@ -118,6 +118,39 @@
       "color": "red",
       "instructor": "TL Javier Combita",
       "schedule": "1:00 PM - 8:00 PM"
+    },
+    {
+      "name": "clan fuffino",
+      "subtitle": "clan fuffinno vanilla",
+      "description": "aksjdañksdjañlskjd",
+      "coders": [],
+      "image_url": "image.jpg",
+      "color": "blue",
+      "instructor": "TL David Martinez",
+      "schedule": "AM - 8:00 AM - 12:45 PM",
+      "id": 7
+    },
+    {
+      "name": "",
+      "subtitle": "",
+      "description": "",
+      "coders": [],
+      "image_url": "",
+      "color": "",
+      "instructor": "Selecciona un instructor",
+      "schedule": "",
+      "id": 8
+    },
+    {
+      "name": "",
+      "subtitle": "",
+      "description": "",
+      "coders": [],
+      "image_url": "",
+      "color": "",
+      "instructor": "Selecciona un instructor",
+      "schedule": "",
+      "id": 9
     }
   ]
 }

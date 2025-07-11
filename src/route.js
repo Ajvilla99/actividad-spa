@@ -1,4 +1,4 @@
-import { onLogin, getClans } from "./api";
+import { onLogin, getClans, createClan } from "./api";
 import { auth } from "./auth";
 
 export const renderRouter = () => {
@@ -14,8 +14,7 @@ export const renderRouter = () => {
     404: "/src/views/",
     "#/": "/src/views/Home.html",
     "#/clans": "/src/views/ClansPage.html",
-    // "#/": "/src/views/Home.html",
-    // "#/": "/src/views/Home.html",
+    "#/clans/new": "/src/views/CreateClanPage.html",
     "#/login": "/src/views/LoginForm.html",
     "#/register": "/src/views/RegisterForm.html",
   };
@@ -127,6 +126,7 @@ export const renderRouter = () => {
       });
     }
 
+    // Logica especial para clans
     if (path === "#/clans") {
       const tbody = document.querySelector("#tbody");
       const clans = await getClans();
@@ -136,13 +136,13 @@ export const renderRouter = () => {
         const name = clan.name.toLowerCase();
         const text = name.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
         const tr = document.createElement("tr");
-        tr.className = ``;
+        tr.className = `hover:bg-indigo-200`;
         tr.innerHTML = `
             <td class="p-2.5">${i}</td>
             <td class="p-2.5">${clan.name}</td>
             <td class="p-2.5 text-wrap">${clan.schedule}</td>
             <td class="p-2.5">${clan.coders.length}/50</td>
-            <td class="p-2.5 hidden md:block">
+            <td class="p-2.5 hidden md:inline-block">
               <div class="w-14 h-8 box-border bg-${clan.color}-500"></div>
             </td>
             <td class="p-2.5">${clan.instructor}</td>
@@ -183,11 +183,48 @@ export const renderRouter = () => {
         tbody.appendChild(tr);
       });
     }
+// ____________________________________
+    if (path === "#/clans/new") {
+
+      const form = document.querySelector("#create-clan-form");
+
+      form?.addEventListener("submit", async (e) => {
+
+        e.preventDefault();
+        console.log('click');
+        
+        const form_data = new FormData(form);
+        const name = form_data.get("name");
+        const subtitle = form_data.get("subtitle");
+        const description = form_data.get("description");
+        const instructor = form_data.get("instructor");
+        const schedule = form_data.get("schedule");
+        const image_url = form_data.get("image_url");
+        const color = form_data.get("color");
+        const coders = [];
+
+        const new_clan = {
+          name,
+          subtitle,
+          description,
+          coders,
+          image_url,
+          color,
+          instructor,
+          schedule,
+        };
+
+        const res = await createClan(new_clan);
+        console.log(res);
+      });
+    }
+
+    // finish
   };
 
-  window.document.querySelectorAll("a").forEach((a) => {
-    a.onclick = route;
-  });
+  // window.document.querySelectorAll("a").forEach((a) => {
+  //   a.onclick = route;
+  // });
 
   window.onpopstate = handleLocation;
   window.route = route;

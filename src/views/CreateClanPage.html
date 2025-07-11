@@ -1,0 +1,139 @@
+<section class="flex justify-center p-5">
+  <div class="w-full max-w-[1248px] mt-5">
+    <div class="">
+      <h1 class="font-bold uppercase text-2xl">Crear nuevo clan</h1>
+    </div>
+    <hr class="border-t-indigo-500/30 my-5" />
+    <div class="grid grid-cols-3 gap-10">
+      <div class="col-span-1">
+        <h2 class="font-medium">Visualizacion del clan</h2>
+        <div class="w-full rounded overflow-hidden bg-slate-100 hover:bg-slate">
+          <div
+            class="w-full p-3 bg-slate-500 flex items-center justify-center text-slate-100"
+          >
+            [IMAGEN URL: ]
+          </div>
+          <div class="p-3 flex flex-col gap-2.5 justify-between">
+            <h3 class="font-bold text-slate-800">Titulo:</h3>
+            <p class="text-sm text-justify line-clamp-2">Descripcion:</p>
+            <button
+              class="w-fit p-3 bg-slate-600 text-slate-100 rounded-sm cursor-pointer hover:bg-slate-700 transition-all"
+            >
+              ver clan
+            </button>
+          </div>
+        </div>
+      </div>
+      <form
+        id="create-clan-form"
+        class="w-full col-span-2 flex flex-col gap-2.5"
+      >
+        <!-- Datos Principales -->
+        <div class="p-3 bg-slate-200 rounded">
+          <div class="pb-3">
+            <h2 class="font-medium">🧾 Datos Principales</h2>
+          </div>
+          <!-- inputs -->
+          <div class="grid grid-cols-2 gap-2.5">
+            <input
+              type="text"
+              name="name"
+              placeholder="Nombre del clan"
+              class="p-3 rounded bg-slate-50 outline-none"
+            />
+            <input
+              type="text"
+              name="subtitle"
+              placeholder="Subtítulo"
+              class="p-3 rounded bg-slate-50 outline-none"
+            />
+            <textarea
+              name="description"
+              placeholder="Descripcion"
+              class="px-3 pt-3 col-span-2 bg-slate-50 outline-none"
+            ></textarea>
+          </div>
+        </div>
+        <!-- Datos Operativos -->
+        <div class="p-3 bg-slate-200 rounded">
+          <div class="pb-3">
+            <h2 class="font-medium">👥 Datos Operativos</h2>
+          </div>
+          <div class="grid grid-cols-2 gap-2.5">
+            <select
+              name="instructor"
+              id="instructor"
+              class="p-3 rounded bg-slate-50 outline-none"
+            >
+              <option>Selecciona un instructor</option>
+              <option value="TL David Martinez">TL David Martinez</option>
+              <option value="TL Moises Cantillo">TL Moises Cantillo</option>
+              <option value="TL Javier Ariza">TL Javier Ariza</option>
+              <option value="TL Javier Combita">TL Javier Combita</option>
+              <option value="TL Naydeth De La Hoz">TL Naydeth De La Hoz</option>
+            </select>
+            <select
+              name="schedule"
+              id="schedule"
+              class="p-3 rounded bg-slate-50 outline-none"
+            >
+              <option value="">Selecciona un Horario</option>
+              <option value="AM - 8:00 AM - 12:45 PM">
+                AM - 8:00 AM - 12:45 PM
+              </option>
+              <option value="PM - 1:00 PM - 8:00 PM">
+                PM - 1:00 PM - 8:00 PM
+              </option>
+            </select>
+          </div>
+        </div>
+        <!-- 🎨 Presentacion Visual -->
+        <div class="p-3 bg-slate-200 rounded">
+          <div class="pb-3">
+            <h2 class="font-medium">🎨 Presentacion Visual</h2>
+          </div>
+          <div class="grid grid-cols-2 gap-2.5">
+            <input
+              type="text"
+              name="image_url"
+              placeholder="URL de la imagen"
+              class="p-3 rounded bg-slate-50 outline-none"
+            />
+
+            <select
+              name="color"
+              id="color"
+              class="outline-none p-3 bg-slate-50 rounded"
+            >
+              <option value="">Selecciona un color</option>
+              <option value="red">Rojo</option>
+              <option value="blue">Azul</option>
+              <option value="emerald">Verde</option>
+              <option value="yellow">Amarillo</option>
+              <option value="purple">Morado</option>
+              <option value="pink">Rosa</option>
+              <option value="indigo">Índigo</option>
+              <option value="gray">Gris</option>
+              <option value="orange">Naranja</option>
+              <option value="teal">Verde azulado</option>
+            </select>
+          </div>
+        </div>
+        <div class="flex gap-2.5">
+          <button
+            type="button"
+            class="bg-indigo-100 hover:bg-indigo-200 p-3 rounded outline-none cursor-pointer"
+          >
+            Cancelar
+          </button>
+          <button
+            type="submit"
+            class="bg-indigo-500 hover:bg-indigo-600 text-indigo-50 p-3 rounded outline-none cursor-pointer"
+          >
+            Crear Clan
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
